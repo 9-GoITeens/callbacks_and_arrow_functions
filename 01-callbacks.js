@@ -8,15 +8,42 @@
  *   «функцією вищого порядку»
  */
 
+// const fnA = function (message, callback) {
+//     console.log(message);
+//     callback(1000);
+//     // console.log(callback);
+// };
+
+// const fnB = function (numer) {
+//     console.log('Це консольлог функції fnB', numer);
+// };
+
+// fnA('string', fnB);
+
 /*
  * функция doMath(a, b, callback)
  */
 
+const doMath = function (a, b, callback) {
+    const result = callback(a, b);
+
+    console.log(result);
+};
+
+doMath(2, 4, function (x, y) {
+    return x + y;
+});
+
+doMath(10, 6, function (x, y) {
+    return x - y;
+});
+
 /*
  * Відкладений виклик: регістрація подій
  */
-
+// const buttonRef = document.querySelector('.js-button');
 /*
+
  * Відкладений виклик: геолокація
  */
 
