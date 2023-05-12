@@ -24,19 +24,19 @@
  * функция doMath(a, b, callback)
  */
 
-const doMath = function (a, b, callback) {
-    const result = callback(a, b);
+// const doMath = function (a, b, callback) {
+//     const result = callback(a, b);
 
-    console.log(result);
-};
+//     console.log(result);
+// };
 
-doMath(2, 4, function (x, y) {
-    return x + y;
-});
+// doMath(2, 4, function (x, y) {
+//     return x + y;
+// });
 
-doMath(10, 6, function (x, y) {
-    return x - y;
-});
+// doMath(10, 6, function (x, y) {
+//     return x - y;
+// });
 
 /*
  * Відкладений виклик: регістрація подій

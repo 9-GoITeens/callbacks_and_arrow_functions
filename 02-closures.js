@@ -9,38 +9,36 @@
 
 const fnA = function (parameter) {
     const innerVariable = 'значення внутрішньої змінної функції fnA';
-
-    const innerFunction = function () {
-        console.log('Это вызов innerFunction');
-    };
-
-    return innerFunction;
 };
 
 /*
- * Поварёнок
+ * Ресторан
  */
-const makeDish = function (sheffName, dish) {
-    console.log(`${sheffName} готовит ${dish}`);
-};
 
-// makeDish('Mango', 'пиріжок');
-// makeDish('Mango', 'омлет');
-// makeDish('Mango', 'чай');
+// const makeDish = function (sheffName, dish) {
+//     console.log(`${sheffName} готує ${dish}`);
+// };
 
-// makeDish('Poly', 'котлети');
-// makeDish('Poly', 'суп');
-// makeDish('Poly', 'кава');
+// makeDish('Leo', 'піцу');
+// makeDish('Leo', 'торт');
+// makeDish('Leo', 'фреш');
 
-const makeSheff = function (name) {};
+// makeDish('Mery', 'котлети');
+// makeDish('Mery', 'суп');
+// makeDish('Mery', 'кава');
 
-// const mango = makeSheff('Mango');
-// const poly = makeSheff('Poly');
+// const leo = makeSheff('Leo');
+// const mery = makeSheff('Mery');
 
 /*
  * Округлятор 🤷‍♂️
  */
+// const floatingPoint = 3.456789;
+// const someInt = Math.round(floatingPoint); // 3
+// const withDecimals = Number(floatingPoint.toFixed(2)); // 3.46
 
-/*
- * Приватні дані і функції - приховані реалізації, інтерфейс
- */
+// const rounder = function (number, places) {
+//     return Number(number.toFixed(places));
+// };
+
+//
