@@ -41,17 +41,47 @@
 /*
  * Відкладений виклик: регістрація подій
  */
-// const buttonRef = document.querySelector('.js-button');
+const buttonRef = document.querySelector('.js-button');
+
+// const handleBtnClick = function () {
+//     console.log('Клік по кнопці');
+// };
+
+// buttonRef.addEventListener('click', function () {
+//     console.log('Клік по кнопці');// інлайн
+// });
+
+// console.dir(buttonRef);
 /*
 
  * Відкладений виклик: геолокація
  */
 
-// window.navigator.geolocation.getCurrentPosition();
+const onGetPositionSuccess = function (position) {
+    console.log('Це виклик функції onGetPositionSuccess');
+
+    console.log(position);
+};
+
+const onGetPositionError = function (error) {
+    console.log('Це виклик функції onGetPositionError');
+
+    console.log(error);
+};
+
+// window.navigator.geolocation.getCurrentPosition(
+//     onGetPositionSuccess,
+//     onGetPositionError,
+// );
+
 /*
  * Відкладений виклик: інтервали
  */
+// const callback = function () {
+//     console.log('Через три секунди в середені колбека в таймауті');
+// };
 
+// setTimeout(callback, 3000);
 // console.log('В коді перед таймаутом');
-// console.log('Через три секунди в середені колбека в таймауті');
+
 // console.log('В коді після таймаута');
